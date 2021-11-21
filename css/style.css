@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* root Variables */
+:root {
+    --color-primary : #ff5722;
+    --color-secondary-light : #fff6f2;
+    --color-secondary-dark : #ffa589;
+    --color-navbar : #f8f8f8;
+    --color-headings : #000;
+    --color-body : #333333;
+    --color-white : #fff;
+}
+
+body {
+    color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-headings);
+}
+
