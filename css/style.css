@@ -119,7 +119,6 @@ h2 {
     background: url(/assets/images/Tick-Square.svg) no-repeat;
     padding-right: 3rem;
     background-position: right center;
-    background-color: rgb(241, 193, 148);
     margin-bottom: 1.5rem;
 }
 @media screen and (min-width:1024px) {
@@ -132,12 +131,13 @@ h2 {
 /* Plans */
 .block-plan {
     display: grid;
-    gap: 2rem 3rem;
-    margin-top: 2rem;
+    gap: 5rem 3rem;
+    margin-top: 5rem;
 }
 .plan {
-    max-width: 500px;
+    max-width: 450px;
     font-size: 1.8rem;
+    transition: all 0.2s ease-out;
 }
 .card {
     border-radius: 20px;
@@ -173,28 +173,28 @@ h2 {
     display: block;
     margin-top: 1.5rem;
 }
+.plan .btn--block {
+    font-size: 1.8rem;
+    margin-top: 10rem;
+}
+.plan--popular {
+    transform: scale(1.1);
+}
+.plan--popular:hover {
+    transform: scale(1.15);
+}
+.plan:hover {
+    transform: scale(1.05);
+}
+
 @media screen and (min-width:1024px) {
  .block-plan {
      grid-template-columns: repeat(3,1fr);
- }   
+     display: grid;
+    gap: 2rem 4rem;
+    margin-top: 5rem;
+ }
+ .plan .btn--block {
+     font-size: 1.8rem;
+ }
 }
-
-
-
-
-
-
-
-
-
-
-/* my code */
-/* .plan_off {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.plan_type {
-    color: var(--color-white);
-} */
