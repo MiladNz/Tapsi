@@ -131,11 +131,13 @@ h2 {
 /* Plans */
 .block-plan {
     display: grid;
-    gap: 5rem 3rem;
+    gap: 7rem 6rem;
     margin-top: 5rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit , minmax(250px, 320px));
 }
 .plan {
-    max-width: 450px;
+    /* max-width: 450px; */
     font-size: 1.8rem;
     transition: all 0.2s ease-out;
 }
@@ -188,13 +190,19 @@ h2 {
 }
 
 @media screen and (min-width:1024px) {
- .block-plan {
-     grid-template-columns: repeat(3,1fr);
-     display: grid;
+ /* .block-plan {
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
     gap: 2rem 4rem;
     margin-top: 5rem;
- }
+ } */
  .plan .btn--block {
      font-size: 1.8rem;
  }
+}
+
+/* Container */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
