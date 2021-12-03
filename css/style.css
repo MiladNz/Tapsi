@@ -24,7 +24,7 @@ html {
 body {
     color: var(--color-body);
     font-size: 1.4rem; /* 1.4 rem = 1.4 * 10 = 14px*/
-
+    line-height: 1.7;
 }
 h1,
 h2,
@@ -37,6 +37,7 @@ h1 {
 }
 h2 {
     font-size: 2.3rem;
+    margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width : 1024px) {
@@ -205,4 +206,41 @@ h2 {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+/* Feature */
+.feature {
+    display: grid;
+}
+.feature__text {
+    margin-bottom: 2rem;
+}
+.feature .btn {
+    padding: 1.2rem 3rem;
+}
+.feature__image > img {
+    width: 70%;
+    height: auto;
+}
+.feature__image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width:1024px) {
+    .feature {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .feature__image {
+        order: 2;
+        margin-bottom: 0;
+    }
+    .feature__detail {
+        order: 1;
+    }
+    .feature__image > img {
+        width: 100%;
+    }
 }
