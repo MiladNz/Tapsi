@@ -255,6 +255,8 @@ h2 {
 /* Contact-us */
 .contact-us {
     display: grid;
+    justify-content: center;
+    gap: 3rem 4rem;
 }
 .contact-us__map {
     display: none;
