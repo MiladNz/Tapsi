@@ -852,6 +852,8 @@ textarea {
 }
 .accordion__heading {
     margin-bottom: 0;
+    color: #3a3a3a;
+    font-size: 1.8rem;
 }
 .accordion__content {
     border-radius: 5px;
