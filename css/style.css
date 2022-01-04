@@ -846,22 +846,28 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    padding: 2rem 2rem;
+    border-bottom: 2px solid #ececec;
 }
 .accordion__heading {
     margin-bottom: 0;
 }
 .accordion__content {
-    border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 1rem 2rem;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: all 0.4s ease-out;
 }
+.accordion__content p {
+    border-bottom: 2px solid #ececec;
+    margin: 1rem 0;
+}
 .accordion__expanded .accordion__content{
     max-height: 100vh;
     opacity: 1;
+    padding: 1rem 4rem;
 }
 .accordion__header i {
     color: var(--color-primary);
@@ -871,3 +877,17 @@ textarea {
 .accordion__expanded .accordion__header i {
     transform: rotate(-90deg);
 }
+.accordion-wrapper {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    border: 2px solid #ececec;
+    box-shadow: 0 9px 12px rgba(0, 0, 0, 0.05);
+}
+.accordion__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    border-bottom: 2px solid #ececec;
+    color: var(--color-primary);
+  }
